@@ -1,37 +1,19 @@
-## Welcome to GitHub Pages
+/*Git Book. Recomienda leer al menos los primeros 3 capítulos del libro Git Book.*/
+https://git-scm.com/book/es/v1
 
-You can use the [editor on GitHub](https://github.com/amayaizcue/coursera/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+/*Ir al directorio:*/
+ls														//Listar los documentos que hay en el directorio donde estamos
+cd (nombre_directorio)									//Entrar en un directorio
+browser-sync start --server --directory --files "*"		//Obligar a que los cambios que hago en el html local se actualicen automáticamente en el navegador
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/amayaizcue/coursera/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+/*Github*/
+														//Crear el nuevo repositorio en el entorno gráfico de github. Dejarlo público.
+git clone https://github.com/amayaizcue/coursera.git	//Clonar el nuevo repositorio a local
+git status												//Comprobrar en que branch estamos ("branch master", "gh-pages",…)
+git checkout gh-pages									//Pasar de "branch master" a "gh-pages"
+git pull												//Bajarme la última versión del servidor a local
+git add *												//Asociar mis cambios con local
+git commit -m "Mensaje"									//Subir cambios a local
+git push												//Subir repository local a web
