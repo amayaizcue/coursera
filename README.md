@@ -17,4 +17,4 @@ git pull						//Bajarme la última versión del servidor a local
 git add *						//Asociar mis cambios con local
 git commit -m "Mensaje"					//Subir cambios a local
 git push						//Subir repository local a web
-browser-sync start --server --directory --files "*" //Permitir la actualización automática de local a navegador 
+browser-sync start --server --directory --files "*" 	//Permitir la actualización automática de local a navegador 
